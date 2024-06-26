@@ -1,8 +1,10 @@
 <template>
-  <presentation />
-  <our-clients />
-  <publics />
+  <Presentation />
+  <OurClients />
+  <Publics />
   <Statistics />
+  <Infot />
+  <Footer />
 </template>
 
 <script>
@@ -10,11 +12,12 @@ import OurClients from "@/views/OurClients.vue";
 import Presentation from "@/views/Presentation.vue";
 import Publics from "@/views/Publics.vue";
 import Statistics from '@/views/StatisticsView.vue';
+import Infot from '@/views/Infot.vue';
 
 import { defineComponent } from "vue";
 
 export default defineComponent({
-  components: { OurClients, Presentation, Publics, Statistics },
+  components: { OurClients, Presentation, Publics, Statistics, Infot },
   data() {
     return {
       msg: "Hello, world",

@@ -1,8 +1,9 @@
 <template>
   <v-app-bar :elevation="0" :style="{ background: '#f5f7fa' }">
+    <v-app-bar-nav-icon class="burgerBar" />
     <div class="container-items-bar">
-      <h1>Vue</h1>
-      <v-btn-group color="transparent">
+      <h1>Vuetify</h1>
+      <v-btn-group class="btn-group-links" color="transparent">
         <v-btn
           v-for="(item, index) in navItems"
           :key="index"

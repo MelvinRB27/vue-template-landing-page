@@ -1,0 +1,65 @@
+@import "variables";
+
+.container-infot {
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.card-infot {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 0px 40px;
+  box-shadow: none;
+}
+
+.card-infot div {
+  display: flex;
+  flex-direction: column;
+  align-items: ce;
+  gap: 20px;
+}
+
+.card-infot .title {
+  color: $font-color;
+  font-size: 40px;
+  max-width: 600px;
+  padding: 0;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.card-infot .description {
+  color: $font-color;
+  max-width: 590px;
+  padding: 0;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+.btn {
+  color: white;
+  text-transform: capitalize;
+  font-size: 12px;
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+  border-radius: 5px;
+  height: 40px;
+  width: 100px;
+}
+
+@media (max-width: 1080px) {
+  .card-infot {
+    flex-direction: column;
+  }
+}

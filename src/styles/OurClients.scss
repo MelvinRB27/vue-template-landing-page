@@ -1,0 +1,39 @@
+@import "variables";
+
+.container-our-clients {
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.title-our-clients {
+  color: $font-color;
+  font-size: 48px;
+  padding: 0;
+  line-height: 50px;
+}
+.text-our-clients {
+  color: $gray-color;
+  padding: 0;
+}
+
+.container-logos-clients {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  //   gap: 150px;
+}
+
+@media (max-width: 1080px) {
+  .container-our-clients {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

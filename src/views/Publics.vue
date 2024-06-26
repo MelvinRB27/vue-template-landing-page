@@ -29,7 +29,7 @@
     </div>
 
     <div class="card-infot">
-      <CellWithPersonIcon />
+      <CellWithPersonsIcon />
       <div>
         <v-card-title class="title">
           The unseen of spending three years at Pixelgrade
@@ -52,7 +52,7 @@
 import BuildIcon from "@/icons/BuildIcon.vue";
 import HandasIcon from "@/icons/HandsIcon.vue";
 import MembersIcon from "@/icons/MembersIcon.vue";
-import CellWithPersonIcon from "@/icons/CellWithPersonIcon.vue";
+import CellWithPersonsIcon from "@/icons/CellWithPersonsIcon.vue";
 import { defineComponent } from "vue";
 import { useRouter } from "vue-router";
 
@@ -63,7 +63,7 @@ interface PublicItem {
 }
 
 export default defineComponent({
-  components: { CellWithPersonIcon },
+  components: { CellWithPersonsIcon },
   name: "Publics",
   setup() {
     const router = useRouter();
@@ -102,96 +102,5 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.container-public {
-  color: black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.title-public {
-  color: #4d4d4d;
-  font-size: 40px;
-  max-width: 700px;
-  padding: 0;
-  text-align: center;
-  line-height: 1.2;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-}
-.container-list-cards {
-  display: flex;
-  width: 90%;
-  align-items: center;
-  justify-content: space-between;
-//   gap: 190px;
-}
-.card-list-public {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 299px;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(171, 190, 209, 0.2);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(171, 190, 209, 0.2);
-  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
-}
-.title-card-list {
-  text-align: center;
-  max-width: 250px;
-  font-size: 30px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-}
-.card-infot {
-  display: flex;
-  align-items: center;
-  gap: 100px;
-  padding: 0px 40px;
-  box-shadow: none;
-}
-
-.card-infot div {
-  display: flex;
-  flex-direction: column;
-  align-items: ce;
-  gap: 20px;
-}
-
-.card-infot .title {
-  color: #4d4d4d;
-  font-size: 40px;
-  max-width: 600px;
-  padding: 0;
-  line-height: 1.2;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-}
-
-.card-infot .description {
-  color: #4d4d4d;
-  max-width: 590px;
-  padding: 0;
-  line-height: 1.2;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  white-space: normal;
-}
-
-.btn {
-  color: white;
-  text-transform: capitalize;
-  font-size: 12px;
-  background-color: #4caf4f;
-  border: 1px solid #4caf4f;
-  border-radius: 5px;
-  height: 40px;
-  width: 100px;
-}
+@import "@/styles/Publics.scss";
 </style>

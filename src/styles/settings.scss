@@ -9,22 +9,35 @@
 //   $color-pack: false
 // );
 
+.burgerBar {
+  display: none;
+}
 
-  /* Personaliza el scroll */
-  ::-webkit-scrollbar {
-    width: 10px; /* Ancho del scroll */
-    height: 5px;
+@media (max-width: 1080px) {
+  .burgerBar {
+    display: block !important;
   }
-  
-  /* Track del scroll */
-  ::-webkit-scrollbar-track {
-    background: rgba(171, 190, 209, 0.2); /* Color del fondo del track */
+  .btn-group-links {
+    display: none !important;
   }
-  
-  /* Handle del scroll */
-  ::-webkit-scrollbar-thumb {
-    /* background-color: rgb(168 85 247 / var(--tw-text-opacity)); Color del handle del scroll */
-    background-color:#4CAF4F; /* Color del handle del scroll */
-    border-radius: 5px; /*Borde redondeado*/
-    border: 2px solid #4CAF4F; /* Borde del handle */
-  }
+}
+
+/* Personaliza el scroll */
+::-webkit-scrollbar {
+  width: 10px; /* Ancho del scroll */
+  height: 5px;
+  display: none;
+}
+
+/* Track del scroll */
+::-webkit-scrollbar-track {
+  background: rgba(171, 190, 209, 0.2); /* Color del fondo del track */
+}
+
+/* Handle del scroll */
+::-webkit-scrollbar-thumb {
+  /* background-color: rgb(168 85 247 / var(--tw-text-opacity)); Color del handle del scroll */
+  background-color: #4caf4f; /* Color del handle del scroll */
+  border-radius: 5px; /*Borde redondeado*/
+  border: 2px solid #4caf4f; /* Borde del handle */
+}

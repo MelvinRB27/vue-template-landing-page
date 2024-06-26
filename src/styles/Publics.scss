@@ -1,0 +1,65 @@
+@import "variables";
+@import "@/styles/Infot.scss";
+
+.container-public {
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.title-public {
+  color: $gray-color;
+  font-size: 40px;
+  max-width: 700px;
+  padding: 0;
+  text-align: center;
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+.container-list-cards {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+  //   gap: 190px;
+}
+.card-list-public {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 299px;
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(171, 190, 209, 0.2);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(171, 190, 209, 0.2);
+  box-shadow: 0px 2px 4px 0px rgba(171, 190, 209, 0.2);
+}
+.title-card-list {
+  text-align: center;
+  max-width: 250px;
+  font-size: 30px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+@media (max-width: 1080px) {
+  .container-list-cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1090px) {
+  .container-list-cards {
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+  }
+}

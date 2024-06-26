@@ -31,33 +31,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container-our-clients {
-  color: black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  padding: 40px;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.title-our-clients {
-  color: #4d4d4d;
-  font-size: 48px;
-  padding: 0;
-  line-height: 50px;
-}
-.text-our-clients {
-  color: #717171;
-  padding: 0;
-}
-
-.container-logos-clients {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 90%;
-//   gap: 150px;
-}
+@import "@/styles/OurClients.scss";
 </style>

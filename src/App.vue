@@ -1,8 +1,9 @@
 <template>
-  <v-app class="app">
-    <v-main class="mainContainer">
+  <v-app>
+    <v-main>
       <AppBars/>
       <router-view />
+      <!-- <Footer /> -->
     </v-main>
   </v-app>
 </template>
@@ -12,8 +13,4 @@
 </script>
 
 <style lang="scss" scoped>
-.app {
-  display: flex;
-  // padding: 40px;
-}
 </style>
