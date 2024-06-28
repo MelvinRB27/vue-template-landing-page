@@ -1,0 +1,68 @@
+@import "variables";
+
+.container-infot {
+  color: black;
+  background-color: $background-color;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 40px;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.card-infot {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0px 40px;
+  box-shadow: none;
+}
+
+.card-infot .card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card-infot .title {
+  color: $primary-color;
+  font-size: 30px;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.card-infot .description {
+  color: $font-color;
+  max-width: 590px;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.btn {
+  color: $primary-color;
+  text-transform: capitalize;
+  font-size: 20px;
+  box-shadow: none;
+  background: transparent;
+}
+
+.container-logos-opinions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 90%;
+  button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .card-infot {
+    flex-direction: column;
+  }
+}

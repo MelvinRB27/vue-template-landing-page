@@ -2,7 +2,10 @@
   <v-app-bar :elevation="0" :style="{ background: '#f5f7fa' }">
     <v-app-bar-nav-icon class="burgerBar" />
     <div class="container-items-bar">
-      <h1>Vuetify</h1>
+      <div class="d-flex ga-2 align-center">
+        <v-img width="35" height="24" src="@/assets/Icon.svg" />
+        <h1>Nextcent</h1>
+      </div>
       <v-btn-group class="btn-group-links" color="transparent">
         <v-btn
           v-for="(item, index) in navItems"
@@ -31,12 +34,12 @@ export default defineComponent({
     const router = useRouter();
 
     const navItems = [
-      { label: "Home", route: "/" },
-      { label: "Service", route: "/service" },
-      { label: "Feature", route: "/feature" },
-      { label: "Product", route: "/product" },
-      { label: "Testimonial", route: "/testimonial" },
-      { label: "FAQ", route: "/faq" },
+      { label: "Home", route: "/home" },
+      { label: "Service", route: "/#" },
+      { label: "Feature", route: "/#" },
+      { label: "Product", route: "/#" },
+      { label: "Testimonial", route: "/#" },
+      { label: "FAQ", route: "/#" },
     ];
 
     const navigateTo = (route: string) => {

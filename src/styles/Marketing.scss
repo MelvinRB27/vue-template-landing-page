@@ -1,0 +1,45 @@
+@import "variables";
+
+.container-marketing {
+  color: black;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 0;
+  box-shadow: none;
+  .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.title-marketing {
+  color: $font-color;
+  font-size: 48px;
+  padding: 0;
+  line-height: 50px;
+}
+.text-marketing {
+  text-align: center;
+  color: $font-color;
+  max-width: 550px;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.container-card-markting {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 1080px) {
+  .container-marketing {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
