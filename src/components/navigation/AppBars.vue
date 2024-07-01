@@ -34,7 +34,7 @@ export default defineComponent({
     const router = useRouter();
 
     const navItems = [
-      { label: "Home", route: "/home" },
+      { label: "Home", route: "/" },
       { label: "Service", route: "/#" },
       { label: "Feature", route: "/#" },
       { label: "Product", route: "/#" },

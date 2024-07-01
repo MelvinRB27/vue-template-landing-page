@@ -9,7 +9,7 @@
     >
       <path
         d="M6.02324 6.24222L7.12263 5.14283C7.25301 5.01245 7.25301 4.80106 7.12263 4.67068L6.02324 3.57129M7.02484 4.90676L2.35071 4.90676"
-        stroke="#4CAF4F"
+        :stroke="color"
         stroke-width="0.5008"
         stroke-linecap="round"
       />
@@ -25,7 +25,7 @@ export default defineComponent({
   props: {
     color: {
       type: String,
-      default: "#1E88E5",
+      default: "#4CAF4F",
     },
     width: {
       type: Number,

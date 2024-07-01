@@ -2,8 +2,8 @@
   <v-footer class="footer">
     <div class="div1">
       <div class="logo-container">
-        <!-- <v-img height="30" src="@/assets/logo.png" /> -->
-        <h1 class="title-footer">Vuetify</h1>
+        <v-img width="35" height="24" src="@/assets/IconFooter.svg" />
+        <h1 class="title-footer">Nextcent</h1>
       </div>
       <div>
         <p>
@@ -14,6 +14,7 @@
         </p>
         <p>All rights reserved</p>
       </div>
+      <SocialLinks />
     </div>
 
     <div class="div2">
@@ -33,7 +34,9 @@
 </template>
 
 <script>
+import SocialLinks from "@/icons/SocialLinks.vue";
 export default {
+  components: { SocialLinks },
   data() {
     return {
       currentYear: new Date().getFullYear(),
@@ -41,20 +44,20 @@ export default {
         {
           title: "Company",
           items: [
-            { name: "About us", link: "/about" },
-            { name: "Blog", link: "/blog" },
-            { name: "Contact us", link: "/contact" },
-            { name: "Pricing", link: "/pricing" },
-            { name: "Testimonials", link: "/testimonials" },
+            { name: "About us", link: "#" },
+            { name: "Blog", link: "/#" },
+            { name: "Contact us", link: "/#" },
+            { name: "Pricing", link: "/#" },
+            { name: "Testimonials", link: "/#" },
           ],
         },
         {
           title: "Support",
           items: [
-            { name: "Help Center", link: "/help" },
-            { name: "FAQ", link: "/faq" },
-            { name: "Contact Support", link: "/support" },
-            { name: "Community", link: "/community" },
+            { name: "Help Center", link: "/#" },
+            { name: "FAQ", link: "/#" },
+            { name: "Contact Support", link: "/#" },
+            { name: "Community", link: "/#" },
           ],
         },
       ],
@@ -78,9 +81,11 @@ export default {
     .logo-container {
       display: flex;
       align-items: center;
+      gap: 1px;
+      padding: 0;
     }
     a {
-        color: #4CAF4F
+      color: #4caf4f;
     }
   }
   .div2 {

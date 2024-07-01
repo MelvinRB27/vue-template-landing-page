@@ -6,6 +6,7 @@
   <Infot />
   <CustomerOpinions />
   <Marketing />
+  <Demo />
   <Footer />
 </template>
 
@@ -17,6 +18,7 @@ import Statistics from "@/views/StatisticsView.vue";
 import Infot from "@/views/Infot.vue";
 import CustomerOpinions from "@/views/CustomerOpinions.vue";
 import Marketing from "@/views/Marketing.vue";
+import Demo from "@/views/Demo.vue";
 
 import { defineComponent } from "vue";
 
@@ -29,6 +31,7 @@ export default defineComponent({
     Infot,
     CustomerOpinions,
     Marketing,
+    Demo
   },
   data() {
     return {
