@@ -16,7 +16,7 @@
         </v-btn>
       </v-btn-group>
 
-      <v-btn-group color="transparent">
+      <v-btn-group>
         <v-btn class="btn-login">Login</v-btn>
         <v-btn class="sign-up">Sign Up</v-btn>
       </v-btn-group>
@@ -55,6 +55,8 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/_variables.scss";
+
 .container-items-bar {
   background: #f5f7fa;
   padding: 0px 100px;
@@ -64,12 +66,13 @@ export default defineComponent({
   align-items: center;
 }
 .btn-login {
-  color: #4caf4f;
+  color: $primary-color;
   background-color: transparent;
   text-transform: capitalize;
 }
 .sign-up {
-  background-color: #4caf4f;
+  background-color: $primary-color;
+  color: white;
   text-transform: capitalize;
   border-radius: 5px;
 }

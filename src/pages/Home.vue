@@ -50,26 +50,4 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.containerHome {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 20px;
-  justify-content: center;
-  align-items: center;
-}
-.divFlex {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-}
 </style>
-
-<!-- <v-card class="containerHome">
-  <div>{{ msg }}</div>
-  <div class="divFlex">
-    <v-btn @click="reset()"> Default </v-btn>
-    <v-btn @click="saludar(`holaaaaaaa`)"> Saludar </v-btn>
-  </div>
-</v-card> -->

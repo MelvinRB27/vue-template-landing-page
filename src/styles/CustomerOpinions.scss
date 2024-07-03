@@ -64,5 +64,11 @@
 @media (max-width: 1080px) {
   .card-infot {
     flex-direction: column;
+    .card-body {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
   }
 }

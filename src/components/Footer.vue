@@ -118,4 +118,22 @@ export default {
   padding: 0;
   line-height: 1.2;
 }
+
+@media (max-width: 1080px) {
+  .footer {
+    flex-direction: column-reverse;
+    gap: 20px;
+    padding: 20px 20px;
+    .div1 {
+    gap: 5px;
+  }
+  .div2 {
+    display: flex;
+    justify-content: space-between;
+    > div {
+      gap: 5px;
+    }
+  }
+  }
+}
 </style>

@@ -45,7 +45,8 @@
 }
 
 @media (max-width: 1080px) {
-  .card-infot {
-    flex-direction: column;
+  .card-marketing-body {
+    position: relative;
+    bottom: 120px;
   }
 }
